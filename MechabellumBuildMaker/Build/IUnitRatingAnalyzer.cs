@@ -23,126 +23,126 @@
 
 			private readonly Stack<UnitRating> stack = new Stack<UnitRating>();
 
-			public void Visit(IUnit.Arclight arclight)
+			public void Visit(IUnit.Crawler unit)
 			{
-				stack.Push(new UnitRating("/", arclight));
+				stack.Push(new UnitRating("E", unit));
 			}
 
-			public void Visit(IUnit.Crawler crawler)
+			public void Visit(IUnit.Fang unit)
 			{
-				stack.Push(new UnitRating("E", crawler));
+				stack.Push(new UnitRating("E", unit));
 			}
 
-			public void Visit(IUnit.Fang fang)
+			public void Visit(IUnit.Marksman unit)
 			{
-				stack.Push(new UnitRating("E", fang));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.FireBadger badger)
+			public void Visit(IUnit.Arclight unit)
 			{
-				stack.Push(new UnitRating("B", badger));
+				stack.Push(new UnitRating("/", unit));
 			}
 
-			public void Visit(IUnit.Fortress fortress)
+			public void Visit(IUnit.Wasp unit)
 			{
-				stack.Push(new UnitRating("S", fortress));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.Hacker hacker)
+			public void Visit(IUnit.Mustang unit)
 			{
-				stack.Push(new UnitRating("S", hacker));
+				stack.Push(new UnitRating("E", unit));
 			}
 
-			public void Visit(IUnit.Marksman marksman)
+			public void Visit(IUnit.Sledgehammer unit)
 			{
-				stack.Push(new UnitRating("S", marksman));
+				stack.Push(new UnitRating("A", unit));
 			}
 
-			public void Visit(IUnit.MeltingPoint meltingPoint)
+			public void Visit(IUnit.Steelball unit)
 			{
-				stack.Push(new UnitRating("A", meltingPoint));
+				stack.Push(new UnitRating("A", unit));
 			}
 
-			public void Visit(IUnit.Mustang mustang)
+			public void Visit(IUnit.Stormcaller unit)
 			{
-				stack.Push(new UnitRating("E", mustang));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.Overlord overlord)
+			public void Visit(IUnit.Phoenix unit)
 			{
-				stack.Push(new UnitRating("S", overlord));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.Phoenix phoenix)
+			public void Visit(IUnit.Rhino unit)
 			{
-				stack.Push(new UnitRating("S", phoenix));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.Rhino rhino)
+			public void Visit(IUnit.Hacker unit)
 			{
-
-				stack.Push(new UnitRating("S", rhino));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.Sandworm sandworm)
+			public void Visit(IUnit.Wraith unit)
 			{
-				stack.Push(new UnitRating("S", sandworm));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.Scorpion scorpion)
+			public void Visit(IUnit.Scorpion unit)
 			{
-				stack.Push(new UnitRating("A", scorpion));
+				stack.Push(new UnitRating("A", unit));
 			}
 
-			public void Visit(IUnit.Sabertooth sabertooth)
+			public void Visit(IUnit.Vulcan unit)
 			{
-				stack.Push(new UnitRating("A", sabertooth));
+				stack.Push(new UnitRating("B", unit));
 			}
 
-			public void Visit(IUnit.Sledgehammer sledgehammer)
+			public void Visit(IUnit.Fortress unit)
 			{
-				stack.Push(new UnitRating("A", sledgehammer));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.Steelball steelball)
+			public void Visit(IUnit.MeltingPoint unit)
 			{
-				stack.Push(new UnitRating("A", steelball));
+				stack.Push(new UnitRating("A", unit));
 			}
 
-			public void Visit(IUnit.Stormcaller stormcaller)
+			public void Visit(IUnit.Overlord unit)
 			{
-				stack.Push(new UnitRating("S", stormcaller));
+				stack.Push(new UnitRating("S", unit));
 			}
 
-			public void Visit(IUnit.Tarantula tarantula)
+			public void Visit(IUnit.Sandworm unit)
+			{
+				stack.Push(new UnitRating("S", unit));
+			}
+
+			public void Visit(IUnit.WarFactory unit)
+			{
+				stack.Push(new UnitRating("S", unit));
+			}
+
+			public void Visit(IUnit.FireBadger unit)
+			{
+				stack.Push(new UnitRating("B", unit));
+			}
+
+			public void Visit(IUnit.Typhoon unit)
+			{
+				stack.Push(new UnitRating("C", unit));
+			}
+
+			public void Visit(IUnit.Sabertooth unit)
+			{
+				stack.Push(new UnitRating("A", unit));
+			}
+
+			public void Visit(IUnit.Tarantula unit)
 			{
 				throw new NotImplementedException();
 			}
-
-			public void Visit(IUnit.Typhoon typhoon)
-			{
-				stack.Push(new UnitRating("C", typhoon));
-			}
-
-			public void Visit(IUnit.Vulcan vulcan)
-			{
-				stack.Push(new UnitRating("B", vulcan));
-			}
-
-			public void Visit(IUnit.WarFactory warFactory)
-			{
-				stack.Push(new UnitRating("S", warFactory));
-			}
-
-			public void Visit(IUnit.Wasp wasp)
-			{
-				stack.Push(new UnitRating("S", wasp));
-			}
-
-			public void Visit(IUnit.Wraith wraith)
-			{
-				stack.Push(new UnitRating("S", wraith));
-			}
+			
 		}
 	}
 }
