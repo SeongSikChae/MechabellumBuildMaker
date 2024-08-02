@@ -9,6 +9,7 @@
 		{
 			UnitRatingAnalyzerProvider provider = new UnitRatingAnalyzerProvider();
 			provider.Add(Unit.UnitType.Arclight, new IUnitRatingAnalyzer.ArclightRatingAnalyzer());
+			provider.Add(Unit.UnitType.Crawler, new IUnitRatingAnalyzer.CrawlerRatingAnalyzer());
 
 			BuildMaker maker = new BuildMaker(provider);
 			Dictionary<string, HashSet<UnitType>> dic = maker.Make(
