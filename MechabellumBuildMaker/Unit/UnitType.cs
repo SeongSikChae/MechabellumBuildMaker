@@ -1,0 +1,30 @@
+﻿namespace Mechabellum.Unit
+{
+	public enum UnitType
+	{
+		Arclight, 
+		Crawler, 
+		Fang, 
+		FireBadger,
+		Fortress,
+		Hacker, 
+		Marksman,
+		MeltingPoint,
+		Mustang,
+		Overlord,
+		Phoenix,
+		Rhino,
+		Sandworm,
+		Scorpion, 
+		Sabertooth, 
+		Sledgehammer, 
+		Steelball, 
+		Stormcaller, 
+		Tarantula, 
+		Typhoon, 
+		Vulcan,
+		WarFactory,
+		Wasp,
+		Wraith
+	}
+}
